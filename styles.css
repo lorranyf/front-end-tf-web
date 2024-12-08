@@ -45,4 +45,8 @@ img {
 	width: 25%;
 	height: 5%;
 	margin: 5px;
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza a imagem horizontalmente e adiciona margem inferior */
+    max-width: 100%;
+    height: auto;
 }
