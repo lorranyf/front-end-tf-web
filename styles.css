@@ -2,38 +2,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
 }
 
 .navbar {
-    background-color: #0077cc;
-    padding: 10px;
     display: flex;
     justify-content: space-around;
+    background-color: #0077cc;
+    padding: 10px;
 }
 
 .navbar button {
     color: white;
-    background-color: transparent;
+    background: none;
     border: none;
     cursor: pointer;
 }
 
-.page {
+.pagina {
     display: none;
     padding: 20px;
 }
 
-.page.active {
+.pagina.ativa {
     display: block;
 }
 
 button {
-    margin: 5px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     background-color: #0077cc;
     color: white;
-    border-radius: 5px;
     cursor: pointer;
 }
