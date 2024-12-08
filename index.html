@@ -15,15 +15,19 @@
         <button onclick="mostrarPagina('compras')">Lista de Compras</button>
     </div>
 
-    <!-- Páginas -->
     <div id="login" class="pagina ativa">
         <h1>Login / Registro</h1>
         <form onsubmit="fazerLogin(event)">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" placeholder="Digite seu telefone">
             <label for="email">E-mail</label>
             <input type="email" id="email" placeholder="Digite seu e-mail">
             <label for="senha">Senha</label>
             <input type="password" id="senha" placeholder="Digite sua senha">
             <button type="submit">Login</button>
+            <button type="submit">Registrar</button>
         </form>
         <a href="#" onclick="mostrarPagina('redefinir')">Esqueci minha senha</a>
     </div>
@@ -58,7 +62,26 @@
                 <button onclick="marcarComoConcluida(this)">Marcar como Concluída</button>
             </li>
         </ul>
+        <button onclick="mostrarPagina('adicionarTarefa')">Adicionar Tarefa</button>
     </div>
+    
+    <div id="adicionarTarefa" class="pagina">
+        <h1>Adicionar Tarefa</h1>
+        <form onsubmit="adicionarTarefa(event)">
+            <label for="nomeTarefa">Nome da Tarefa</label>
+            <input type="text" id="nomeTarefa" placeholder="Digite o nome da tarefa" required>
+            
+            <label for="dataTarefa">Data da Tarefa</label>
+            <input type="date" id="dataTarefa" required>
+            
+            <label for="responsavelTarefa">Responsável</label>
+            <input type="text" id="responsavelTarefa" placeholder="Digite o nome do responsável" required>
+            
+            <button type="submit">Adicionar</button>
+            <button type="button" onclick="mostrarPagina('tarefas')">Cancelar</button>
+        </form>
+    </div>
+    
 
     <div id="calendario" class="pagina">
         <h1>Calendário</h1>
@@ -88,6 +111,7 @@
             <button type="submit">Adicionar</button>
         </form>
     </div>
+
 
     <script src="scripts.js"></script>
 </body>

@@ -50,3 +50,29 @@ function adicionarItem(event) {
 function removerItem(botao) {
     botao.parentElement.remove();
 }
+function adicionarTarefa(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nomeTarefa').value;
+    const data = document.getElementById('dataTarefa').value;
+    const responsavel = document.getElementById('responsavelTarefa').value;
+
+    if (nome && data && responsavel) {
+        const lista = document.getElementById('listaTarefas');
+        const novaTarefa = document.createElement('li');
+        novaTarefa.innerHTML = `
+            <span>${nome} - ${responsavel} (${data})</span>
+            <button onclick="marcarComoConcluida(this)">Marcar como Concluída</button>
+        `;
+
+        lista.appendChild(novaTarefa);
+
+        document.getElementById('nomeTarefa').value = '';
+        document.getElementById('dataTarefa').value = '';
+        document.getElementById('responsavelTarefa').value = '';
+        mostrarPagina('tarefas');
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
+}
+
