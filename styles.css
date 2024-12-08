@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    background-color: #0077cc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
