@@ -17,6 +17,7 @@
 
     <div id="login" class="pagina ativa">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Login / Registro</h1>
         <form onsubmit="fazerLogin(event)">
             <label for="name">Nome</label>
@@ -31,10 +32,12 @@
             <button type="submit">Registrar</button>
         </form>
         <a href="#" onclick="mostrarPagina('redefinir')">Esqueci minha senha</a>
+        </div>
     </div>
 
     <div id="redefinir" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Redefinir Senha</h1>
         <form>
             <label for="emailRedefinir">E-mail</label>
@@ -42,19 +45,23 @@
             <button type="submit" onclick="alert('Link de redefinição enviado!')">Enviar</button>
         </form>
         <button onclick="mostrarPagina('login')">Voltar</button>
+        </div>
     </div>
 
     <div id="painel" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Painel Principal</h1>
         <ul id="tarefasHoje">
             <li>Tarefa 1 - Pendente</li>
             <li>Tarefa 2 - Concluída</li>
         </ul>
+        </div>
     </div>
 
     <div id="tarefas" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Lista de Tarefas</h1>
         <ul id="listaTarefas">
             <li>
@@ -67,10 +74,12 @@
             </li>
         </ul>
         <button onclick="mostrarPagina('adicionarTarefa')">Adicionar Tarefa</button>
+        </div>
     </div>
     
     <div id="adicionarTarefa" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Adicionar Tarefa</h1>
         <form onsubmit="adicionarTarefa(event)">
             <label for="nomeTarefa">Nome da Tarefa</label>
@@ -85,11 +94,13 @@
             <button type="submit">Adicionar</button>
             <button type="button" onclick="mostrarPagina('tarefas')">Cancelar</button>
         </form>
+        </div>
     </div>
     
 
     <div id="calendario" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Calendário</h1>
         <div class="calendario">
             <button onclick="verTarefa(1)">1/12</button>
@@ -124,20 +135,24 @@
             <button onclick="verTarefa(30)">30/12</button>
             <button onclick="verTarefa(31)">31/12</button>
         </div>
+        </div>
     </div>
 
     <div id="compras" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Lista de Compras</h1>
         <ul id="listaCompras">
             <li>Arroz - R$10 <button onclick="removerItem(this)">Remover</button></li>
             <li>Feijão - R$8 <button onclick="removerItem(this)">Remover</button></li>
         </ul>
         <button onclick="mostrarPagina('adicionarItem')">Adicionar Item</button>
+        </div>
     </div>
 
     <div id="adicionarItem" class="pagina">
         <img src="imgs/hometasker.jpg" alt="Login" class="imagem-redonda">
+        <div class="center-text">
         <h1>Adicionar Item</h1>
         <form onsubmit="adicionarItem(event)">
             <label for="nomeItem">Nome do Item</label>
@@ -146,6 +161,7 @@
             <input type="number" id="precoItem" placeholder="Digite o preço">
             <button type="submit">Adicionar</button>
         </form>
+        </div>
     </div>
 
 
