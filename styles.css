@@ -8,7 +8,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #0077cc;
+    background-color: #7FFFD4;
     padding: 10px;
 }
 
@@ -31,7 +31,18 @@ body {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #0077cc;
-    color: white;
+    background-color: 	#00FFFF;
+    color: rgb(15, 15, 15);
     cursor: pointer;
+}
+.imagem-redonda {
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+}
+img {
+	width: 25%;
+	height: 5%;
+	margin: 5px;
 }
