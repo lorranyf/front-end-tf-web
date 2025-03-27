@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3cfcf;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5c9782;
+    padding: 10px;
+}
+
+.navbar button {
+    color: rgb(22, 21, 21);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.pagina {
+    display: none;
+    padding: 20px;
+}
+
+.pagina.ativa {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: 	#5c9782;
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+}
+.imagem-redonda {
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+}
+img {
+	width: 25%;
+	height: 5%;
+	margin: 5px;
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza a imagem horizontalmente e adiciona margem inferior */
+    max-width: 100%;
+    height: auto;
+}
+.center-text {
+    text-align: center;
+}
